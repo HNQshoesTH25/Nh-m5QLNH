@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="QuanLyNhaHang.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Quản Lý Nhà Hàng
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:Label ID="lblTen" runat="server" Text=""></asp:Label>
+                
+                &nbsp;
+                
+                <asp:LinkButton ID="linkbtn" runat="server" onclick="linkbtn_Click">Đăng Nhập</asp:LinkButton>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                    onmenuitemclick="NavigationMenu_MenuItemClick">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/TrangChu.aspx" Text="Trang Chủ"/>
+                        <asp:MenuItem NavigateUrl="~/NhanVien.aspx" Text="Quản Lý Nhân Viên"/>
+                        <asp:MenuItem NavigateUrl="~/#" Text="Quản Lý Kho"/>
+                        <asp:MenuItem NavigateUrl="~/#" Text="Quản Lý Doanh Thu"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

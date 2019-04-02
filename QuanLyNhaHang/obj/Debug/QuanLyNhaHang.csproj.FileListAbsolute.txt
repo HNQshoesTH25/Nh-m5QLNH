@@ -1,0 +1,4 @@
+C:\Users\YOUR_NAME\Desktop\QuanLyNhaHang\QuanLyNhaHang\bin\QuanLyNhaHang.dll
+C:\Users\YOUR_NAME\Desktop\QuanLyNhaHang\QuanLyNhaHang\bin\QuanLyNhaHang.pdb
+C:\Users\YOUR_NAME\Desktop\QuanLyNhaHang\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.dll
+C:\Users\YOUR_NAME\Desktop\QuanLyNhaHang\QuanLyNhaHang\obj\Debug\QuanLyNhaHang.pdb
